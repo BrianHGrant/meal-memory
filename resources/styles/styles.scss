@@ -5,6 +5,7 @@ $heading-font: 'Abril Fatface', cursive;
 $body-font: 'Droid Sans', sans-serif;
 $box-background: #DBBF7F;
 $box-background-transparent: rgba(219,191,127, .75);
+$orange: #cf7017;
 
 body{
   background-image: url($background-image-largescreen);
@@ -33,7 +34,7 @@ h1 {
 .meal-box {
   margin: 1em;
   padding: 0.5em;
-  background-color: $box-background;
+  background-color: $box-background-transparent;
   border-radius: 8px;
 }
 
@@ -49,4 +50,8 @@ h1 {
 
 #detail-box {
   background-color: $box-background-transparent;
+}
+
+.selected {
+  color: $orange;
 }

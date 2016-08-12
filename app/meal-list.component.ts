@@ -1,9 +1,9 @@
 import {Component, EventEmitter} from 'angular2/core';
-import { MealComponent} from './meal.component'
+import { MealComponent} from './meal.component';
 import { Meal } from './meal.model';
 import { NewMealComponent } from './new-meal.component';
 import { ShowMealDetailComponent } from './show-meal-detail.component';
-import { CaloriePipe } from './calorie.pipe'
+import { CaloriePipe } from './calorie.pipe';
 
 @Component ({
   selector: 'meal-list',
@@ -46,7 +46,7 @@ export class MealListComponent {
   public mealList: Meal[];
   public onMealSelect: EventEmitter<Meal>;
   public selectedMeal: Meal;
-  public selectedCalorie: string="low";
+  public selectedCalorie: string="showall";
   constructor(){
     this.onMealSelect = new EventEmitter();
   }

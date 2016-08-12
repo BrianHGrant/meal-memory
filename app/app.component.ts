@@ -8,9 +8,9 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
     <h1>Meal Memory Fitness Tracker</h1>
-        <meal-list
-          [mealList]="meals">
-        </meal-list>
+    <meal-list
+      [mealList]="meals">
+    </meal-list>
   </div>
   `
 })
