@@ -3,6 +3,7 @@ $background-image-smallscreen: '../images/pear-background.jpg';
 $heading-font-color: #FFD009;
 $heading-font: 'Abril Fatface', cursive;
 $box-background: #DBBF7F;
+$box-background-transparent: rgba(219,191,127, .75);
 
 
 h1 {
@@ -25,7 +26,7 @@ body{
 }
 
 .meal-box {
-  margin-top: 1em;
+  margin: 1em;
   padding: 0.5em;
   background-color: $box-background;
   border-radius: 8px;
@@ -35,4 +36,8 @@ body{
   text-align: center;
   font-family: $heading-font;
   color: white;
+}
+
+#add-box {
+  background-color: $box-background-transparent;
 }

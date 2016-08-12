@@ -8,15 +8,9 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
     <h1>Meal Memory Fitness Tracker</h1>
-    <div class="row">
-      <div class="col-xs-4 meal-box">
-      <h2>Saved Meals</h2>
-      <hr>
         <meal-list
           [mealList]="meals">
         </meal-list>
-      </div>
-    </div>
   </div>
   `
 })
@@ -26,7 +20,7 @@ export class AppComponent {
   constructor(){
     this.meals =
     [
-      new Meal("Chicken Alfredo", 600, "1 cup, homemade w/ organic chicken, artichoke hearts")
+      new Meal("Chicken Alfredo", 600, "1 cup, homemade w/ organic chicken, artichoke hearts", 1)
     ]
   }
 }
