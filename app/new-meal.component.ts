@@ -6,7 +6,8 @@ import { Meal } from './meal.model';
   outputs: ['onSubmitForm'],
   template: `
 
-    <h3>Add a new meal:</h3>
+    <h2>Add a new meal:</h2>
+    <hr>
     <div class="form-group">
       <label for="name">Meal Name:</label>
       <input type="text" class="form-control" id="name" #addName>

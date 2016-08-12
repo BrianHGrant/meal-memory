@@ -2,27 +2,32 @@ $background-image-largescreen: '../images/fruit-1213041.jpg';
 $background-image-smallscreen: '../images/pear-background.jpg';
 $heading-font-color: #FFD009;
 $heading-font: 'Abril Fatface', cursive;
+$body-font: 'Droid Sans', sans-serif;
 $box-background: #DBBF7F;
 $box-background-transparent: rgba(219,191,127, .75);
-
-
-h1 {
-  color: $heading-font-color;
-  font-family: $heading-font;
-  font-size: 46px;
-  text-align: center;
-}
 
 body{
   background-image: url($background-image-largescreen);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  font-family: $body-font;
+}
+
+.btn {
+  font-family: $body-font;
 }
 
 @media only screen and (max-width: 800px) {
   body {
         background-image: url($background-image-smallscreen);
     }
+}
+
+h1 {
+  color: $heading-font-color;
+  font-family: $heading-font;
+  font-size: 46px;
+  text-align: center;
 }
 
 .meal-box {
@@ -39,5 +44,9 @@ body{
 }
 
 #add-box {
+  background-color: $box-background-transparent;
+}
+
+#detail-box {
   background-color: $box-background-transparent;
 }

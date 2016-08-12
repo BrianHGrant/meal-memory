@@ -20,7 +20,10 @@ export class AppComponent {
   constructor(){
     this.meals =
     [
-      new Meal("Chicken Alfredo", 600, "1 cup, homemade w/ organic chicken, artichoke hearts", 1)
+      new Meal("Chicken Alfredo", 600, "1 cup, homemade w/ organic chicken, artichoke hearts", 1),
+      new Meal("Green Smoothie", 420, "Bananna, pineapple, ginger, pear, kale, spinich", 2),
+      new Meal("Full Breakfast", 800, "Eggs, Hash browns, sausage, pancakes", 3),
+      new Meal("Yogurt Parfait", 150, "Yogart, oatmeal, cranberries", 4)
     ]
   }
 }
