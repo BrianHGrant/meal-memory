@@ -1,6 +1,6 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
+import { MealListComponent } from './meal-list.component'
 import { Meal } from './meal.model';
-import { MealListComponent} from './meal-list.component'
 
 @Component({
   selector: 'my-app',
@@ -8,7 +8,15 @@ import { MealListComponent} from './meal-list.component'
   template: `
   <div class="container">
     <h1>Meal Memory Fitness Tracker</h1>
-    <meal-list [meal-list]="meals"></meal-list>
+    <div class="row">
+      <div class="col-xs-4 meal-box">
+      <h2>Saved Meals</h2>
+      <hr>
+        <meal-list
+          [mealList]="meals">
+        </meal-list>
+      </div>
+    </div>
   </div>
   `
 })
