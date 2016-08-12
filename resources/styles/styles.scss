@@ -1,0 +1,16 @@
+$background-image: '../images/fruit-1213041.jpg';
+$heading-font-color: #FFD009;
+$heading-font: 'Abril Fatface', cursive;
+
+
+h1 {
+  color: $heading-font-color;
+  font-family: $heading-font;
+  font-size: 46px;
+}
+
+body{
+  background-image: url($background-image);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
